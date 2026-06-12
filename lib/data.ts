@@ -12,7 +12,7 @@ export const STATS = [
   { label: "Years Experience", value: "6+", suffix: "" },
   { label: "Technologies", value: "30+", suffix: "" },
   { label: "Projects Shipped", value: "50+", suffix: "" },
-  { label: "Apps Delivered", value: "30+", suffix: "" },
+  { label: "Apps Delivered", value: "10+", suffix: "" },
 ];
 
 export const EXPERTISE_AREAS = [
