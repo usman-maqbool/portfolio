@@ -33,7 +33,7 @@ export const EXPERTISE_AREAS = [
     icon: "Cloud",
     description:
       "Infrastructure automation, containerisation, CI/CD pipelines, and cloud-native deployments on AWS.",
-    skills: ["AWS EC2", "S3", "Lambda", "RDS", "Docker", "Kubernetes", "GitHub Actions", "GitLab CI/CD", "Nginx"],
+    skills: ["AWS EC2", "S3", "Lambda", "RDS", "Fargate", "Docker", "Kubernetes", "GitHub Actions", "GitLab CI/CD", "Nginx"],
     level: 90,
     color: "cyan",
   },
@@ -96,10 +96,10 @@ export const PROJECTS = [
     problem:
       "Patent databases are complex and inaccessible to independent inventors and small businesses who need to conduct accurate patent searches quickly.",
     solution:
-      "Built an AI-powered patent discovery tool with a user-friendly interface and advanced filters, improving search accuracy and cutting research time by 40% compared to manual methods.",
+      "Built an AI-powered patent discovery tool with a user-friendly interface and advanced filters, improving search accuracy and significantly reducing research time for IP professionals.",
     architecture: ["Python", "Django", "PostgreSQL", "HTML/CSS", "Bootstrap"],
     keyResults: [
-      "40% reduction in patent research time",
+      "Significantly reduced research time for IP professionals",
       "AI-powered search accuracy improvements",
       "Advanced keyword and filter system",
       "Free access to vast patent database",
@@ -134,12 +134,12 @@ export const PROJECTS = [
     problem:
       "Enterprise IoT and telecommunications clients needed a reliable AFC (Automated Frequency Coordination) portal and DMVI system with strict uptime and compliance requirements.",
     solution:
-      "Engineered and maintained an IoT-based Qualcomm AFC portal and DMVI system at StudioX — improving system reliability and uptime by 30% with streamlined deployment pipelines using GitLab CI/CD, Docker, and AWS.",
+      "Engineered and maintained an IoT-based Qualcomm AFC portal and DMVI system at StudioX — improving system reliability and reducing unplanned downtime with streamlined deployment pipelines using GitLab CI/CD, Docker, and AWS.",
     architecture: ["Django", "React.js", "Python", "Docker", "AWS", "GitLab CI/CD", "IoT"],
     keyResults: [
-      "30% improvement in system reliability and uptime",
-      "50% reduction in average deployment time",
-      "Eliminated environment inconsistencies",
+      "Improved system reliability and reduced unplanned downtime",
+      "Significantly reduced average deployment time",
+      "Eliminated environment inconsistencies across services",
       "Enterprise IoT compliance achieved",
     ],
     tags: ["IoT", "Django", "AWS", "DevOps", "Enterprise"],
@@ -153,10 +153,10 @@ export const PROJECTS = [
     problem:
       "A smart home startup needed scalable cloud infrastructure enabling homeowners to control smart home devices across multiple OEM brands from a unified interface.",
     solution:
-      "Collaborated at Crowdbotics to design a scalable cloud infrastructure for multi-OEM smart home device communication — improving device compatibility coverage by 25% via backend API development and front-end integration.",
+      "Collaborated at Crowdbotics to design a scalable cloud infrastructure for multi-OEM smart home device communication — broadening device compatibility coverage via backend API development and front-end integration.",
     architecture: ["Django REST Framework", "Python", "PostgreSQL", "AWS", "React.js"],
     keyResults: [
-      "25% improvement in device compatibility coverage",
+      "Broadened device compatibility across multiple OEM brands",
       "Multi-OEM brand support",
       "Scalable cloud infrastructure",
       "Seamless device communication backend",
@@ -172,13 +172,13 @@ export const PROJECTS = [
     problem:
       "A growing digital agency needed a reliable backend engineer to design and deliver web applications across 30+ client projects with consistent quality and performance.",
     solution:
-      "At Dextersol, designed and delivered 30+ web applications using Django and Flask for backend services with HTML/CSS/JS + Bootstrap frontends — reducing production bugs by 20% through automated testing practices.",
+      "At Dextersol, designed and delivered 30+ web applications using Django and Flask for backend services with HTML/CSS/JS + Bootstrap frontends — integrating automated testing and deployment optimisation for fewer production incidents.",
     architecture: ["Django", "Flask", "Python", "PostgreSQL", "HTML/CSS", "Bootstrap", "JavaScript"],
     keyResults: [
       "30+ web applications delivered",
-      "20% reduction in production bugs",
+      "Fewer production incidents via automated testing",
       "Performance improvements via query optimisation",
-      "Automated testing integration",
+      "More stable releases through CI/CD practices",
     ],
     tags: ["Django", "Flask", "Python", "Full-Stack"],
     color: "yellow",
@@ -195,10 +195,10 @@ export const EXPERIENCE = [
     description:
       "Lead full-stack development initiatives integrating system design principles to deliver scalable, production-grade solutions for international clients.",
     achievements: [
-      "Architected ZeroCheating — exam integrity platform using React Native, Electron, and Django",
-      "Developed Easy Patent Search — AI-powered patent discovery tool, cutting research time by 40%",
-      "Built Delineate — Co-Pilot application for Quantitative Systems Pharmacology researchers",
-      "Enforced code quality via peer reviews, automated testing, and CI/CD best practices",
+      "Architected and built ZeroCheating — exam integrity platform using React Native, Electron, and Django, reducing manual proctoring overhead via automated CI/CD surveillance workflows",
+      "Developed Easy Patent Search — AI-powered patent discovery tool, improving search accuracy and significantly reducing research time for IP professionals",
+      "Built Delineate — Co-Pilot application for QSP researchers, designing high-availability backend architecture with robust data processing pipelines",
+      "Enforced code quality standards through peer code reviews, automated testing, and CI/CD best practices across the engineering team",
     ],
     technologies: ["Django", "Python", "React", "React Native", "Electron", "FastAPI", "AWS", "PostgreSQL"],
     type: "full-time",
@@ -211,10 +211,9 @@ export const EXPERIENCE = [
     description:
       "Developed and maintained enterprise-grade web applications using Django (backend) and React.js (frontend), delivering efficient, well-tested Python services for US-based clients.",
     achievements: [
-      "Engineered IoT-based Qualcomm AFC portal and DMVI system — improved uptime by 30%",
-      "Streamlined deployment pipelines using GitLab CI/CD, Docker, and AWS — cut deploy time by 50%",
-      "Eliminated environment inconsistencies across dev, staging, and production",
-      "Collaborated with product and QA teams to align features with business objectives",
+      "Engineered IoT-based Qualcomm AFC portal and DMVI system — improved system reliability and reduced unplanned downtime across the platform",
+      "Streamlined deployment pipelines using GitLab CI/CD, Docker, and AWS — cut deployment time significantly and eliminated environment inconsistencies across services",
+      "Collaborated with product and QA teams to define technical requirements, ensuring delivery aligned with business objectives",
     ],
     technologies: ["Django", "React.js", "Python", "Docker", "AWS", "GitLab CI/CD", "PostgreSQL"],
     type: "full-time",
@@ -228,9 +227,8 @@ export const EXPERIENCE = [
       "Collaborated with senior engineers to design a scalable cloud infrastructure enabling homeowners to communicate with and control smart home devices across multiple OEM brands.",
     achievements: [
       "Designed scalable cloud infrastructure for multi-OEM smart home device communication",
-      "Improved device compatibility coverage by 25% via backend API and front-end integration",
-      "Applied AI-assisted code matching to accelerate feature development",
-      "Contributed to modular component architecture for codebase reuse",
+      "Contributed to backend API development and front-end integration, broadening device compatibility coverage across multiple OEM brands",
+      "Reduced feature development time by leveraging a modular component library, identifying and adapting reusable code across services",
     ],
     technologies: ["Django REST Framework", "Python", "React.js", "PostgreSQL", "AWS"],
     type: "full-time",
@@ -243,10 +241,9 @@ export const EXPERIENCE = [
     description:
       "Designed and delivered 30+ web applications using Django and Flask for backend services, and HTML/CSS/JS with Bootstrap for responsive front-end interfaces.",
     achievements: [
-      "Designed and delivered 30+ web applications across diverse client verticals",
-      "Reduced production bugs by 20% through automated testing and deployment optimisation",
-      "Improved performance by refactoring legacy backend logic and optimising database queries",
-      "Streamlined release cycles through CI/CD integration practices",
+      "Designed and delivered 30+ web applications using Django and Flask across diverse client verticals",
+      "Improved application performance by refactoring legacy backend logic and optimising database queries",
+      "Streamlined release cycles by integrating automated testing and deployment optimisation, resulting in fewer production incidents and more stable releases",
     ],
     technologies: ["Django", "Flask", "Python", "PostgreSQL", "HTML/CSS", "Bootstrap", "JavaScript"],
     type: "full-time",
@@ -257,12 +254,11 @@ export const EXPERIENCE = [
     duration: "Jan 2019 — Sep 2019 · 8 mos",
     location: "Lahore, Pakistan",
     description:
-      "Initiated and contributed to foundational AI/ML projects, leveraging scikit-learn, Pandas, and Matplotlib to develop predictive models and generate data-driven insights.",
+      "Contributed to foundational AI/ML projects, leveraging scikit-learn, Pandas, and Matplotlib to develop predictive models and generate data-driven insights.",
     achievements: [
-      "Built predictive models using scikit-learn, Pandas, and Matplotlib",
-      "Generated data-driven insights from model outputs",
+      "Contributed to foundational AI/ML projects, developing predictive models using scikit-learn, Pandas, and Matplotlib",
       "Gained hands-on experience in model testing, optimisation, and deployment",
-      "Used Git to streamline development workflow and reduce integration errors",
+      "Used Git to streamline the development workflow and reduce integration errors",
     ],
     technologies: ["Python", "scikit-learn", "Pandas", "Matplotlib", "Git"],
     type: "full-time",
@@ -335,11 +331,11 @@ export const TESTIMONIALS = [
 export const CERTIFICATIONS = [
   {
     id: "aws-sa",
-    name: "AWS Certified Solutions Architect",
+    name: "AWS Certified Solutions Architect (SAA-C03)",
     level: "Associate",
-    provider: "AWS Training and Certification",
-    issued: "August 2021",
-    expires: "October 2024",
+    provider: "Udemy / AWS",
+    issued: "2021",
+    expires: null,
     color: "orange",
     icon: "Cloud",
   },
