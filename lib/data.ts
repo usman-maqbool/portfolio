@@ -5,6 +5,7 @@ export const SITE_CONFIG = {
   email: "usman.maqbol.dev@gmail.com",
   github: "https://github.com/usman-maqbool",
   linkedin: "https://www.linkedin.com/in/usman-maqbool-10b1321b1/",
+  upwork: "https://www.upwork.com/freelancers/~01fb16c872d7ba8796",
   location: "Lahore, Pakistan · Open to Remote",
 };
 
@@ -12,7 +13,7 @@ export const STATS = [
   { label: "Years Experience", value: "6+", suffix: "" },
   { label: "Technologies", value: "30+", suffix: "" },
   { label: "Projects Shipped", value: "50+", suffix: "" },
-  { label: "Apps Delivered", value: "10+", suffix: "" },
+  { label: "Job Success Score", value: "98%", suffix: "", source: "Upwork" },
 ];
 
 export const EXPERTISE_AREAS = [
@@ -270,39 +271,86 @@ export const EXPERIENCE = [
 
 export const TESTIMONIALS = [
   {
-    name: "Sarah Chen",
-    role: "CTO",
-    company: "FinTech Startup",
-    avatar: "SC",
+    name: "Matthew B.",
+    role: "Founder",
+    company: "Product Development & Manufacturing",
+    avatar: "MB",
     content:
-      "Usman redesigned our entire data infrastructure in 3 months. What used to take our team 2 days to query now runs in seconds. His understanding of both the technical and business sides is exceptional.",
+      "Working with Usman as a Full Stack Developer for the past year has been absolutely awesome! He's a wizard when it comes to Python and mobile app development, and he has rocked multiple projects with his skills. Usman's Python game is seriously strong. He's got a deep understanding of the language and its frameworks, and he consistently delivers top-notch code that's efficient and scalable. When faced with tricky problems, he always comes up with creative solutions that blow our minds. Not only is Usman a Python pro, but he's also a mobile app genius. He knows all the ins and outs of different platforms and frameworks, and he's built some seriously impressive and user-friendly applications. His attention to detail ensures that the user experience is smooth and enjoyable.",
     rating: 5,
+    date: "Jul 2023",
+    verified: true,
+    source: "Upwork",
   },
   {
-    name: "Marcus Williams",
-    role: "VP Engineering",
-    company: "B2B SaaS Company",
-    avatar: "MW",
+    name: "Upwork Client",
+    role: "Long-Term Client",
+    company: "Python / Flask & AWS",
+    avatar: "UC",
     content:
-      "Brought Usman in to rescue a failing microservices migration. He diagnosed the root issues within a week and delivered a working system in 6 weeks. Exceptional problem-solving skills.",
+      "Usman was a great developer. He worked well on our project. We'd hire him in the future again!",
     rating: 5,
+    date: "May 2026",
+    verified: true,
+    source: "Upwork",
   },
   {
-    name: "Priya Patel",
-    role: "Founder & CEO",
-    company: "AI Research Platform",
-    avatar: "PP",
+    name: "Upwork Client",
+    role: "Client",
+    company: "Track Patent",
+    avatar: "TP",
     content:
-      "Usman built our AI document platform from scratch. He didn't just write code — he challenged our assumptions, improved our product thinking, and delivered something that genuinely impressed our investors.",
+      "Usman is a pro! He is a fantastic developer and he is smart, reliable and gives the extra mile.",
     rating: 5,
+    date: "Mar 2026",
+    verified: true,
+    source: "Upwork",
   },
   {
-    name: "David Okafor",
-    role: "Engineering Manager",
-    company: "Enterprise SaaS",
-    avatar: "DO",
+    name: "Upwork Client",
+    role: "Client",
+    company: "AWS Web App Project",
+    avatar: "AW",
     content:
-      "One of the most reliable engineers I've worked with. Usman communicates clearly, hits deadlines, and writes code that other engineers actually want to maintain. Rare combination.",
+      "Usman did a great job on performing various web app development-related coding tasks on Amazon Web Services. We'll expect to work with this freelancer again.",
     rating: 5,
+    date: "Oct 2020",
+    verified: true,
+    source: "Upwork",
+  },
+  {
+    name: "Upwork Client",
+    role: "Client",
+    company: "Django & Docker Project",
+    avatar: "DD",
+    content:
+      "Usman Maqbool delivered great work on this Assistance in Django rest framework and Docker project and I would recommend this contractor.",
+    rating: 5,
+    date: "2020",
+    verified: true,
+    source: "Upwork",
+  },
+];
+
+export const CERTIFICATIONS = [
+  {
+    id: "aws-sa",
+    name: "AWS Certified Solutions Architect",
+    level: "Associate",
+    provider: "AWS Training and Certification",
+    issued: "August 2021",
+    expires: "October 2024",
+    color: "orange",
+    icon: "Cloud",
+  },
+  {
+    id: "python-ml",
+    name: "Python for Data Science and Machine Learning Bootcamp",
+    level: "Certificate",
+    provider: "Udemy",
+    issued: "May 2020",
+    expires: null,
+    color: "blue",
+    icon: "Brain",
   },
 ];

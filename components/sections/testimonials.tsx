@@ -1,14 +1,15 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Star, Quote } from "lucide-react";
+import { Star, Quote, BadgeCheck } from "lucide-react";
 import { TESTIMONIALS } from "@/lib/data";
 
 const AVATAR_COLORS: Record<string, string> = {
-  SC: "bg-[#10B981]/20 text-[#10B981] border-[#10B981]/30",
-  MW: "bg-[#8B5CF6]/20 text-[#8B5CF6] border-[#8B5CF6]/30",
-  PP: "bg-[#10B981]/20 text-[#10B981] border-[#10B981]/30",
-  DO: "bg-[#F97316]/20 text-[#F97316] border-[#F97316]/30",
+  MB: "bg-[#10B981]/20 text-[#10B981] border-[#10B981]/30",
+  UC: "bg-[#8B5CF6]/20 text-[#8B5CF6] border-[#8B5CF6]/30",
+  TP: "bg-[#10B981]/20 text-[#10B981] border-[#10B981]/30",
+  AW: "bg-[#F97316]/20 text-[#F97316] border-[#F97316]/30",
+  DD: "bg-[#3B82F6]/20 text-[#3B82F6] border-[#3B82F6]/30",
 };
 
 export function Testimonials() {
@@ -36,7 +37,7 @@ export function Testimonials() {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-5">
+        <div className={`grid gap-5 ${TESTIMONIALS.length === 1 ? "max-w-3xl mx-auto" : TESTIMONIALS.length === 3 ? "md:grid-cols-2 lg:grid-cols-3" : "md:grid-cols-2"}`}>
           {TESTIMONIALS.map((t, i) => (
             <motion.div
               key={t.name}
@@ -48,10 +49,18 @@ export function Testimonials() {
             >
               <Quote className="absolute top-6 right-6 w-8 h-8 text-white/4 group-hover:text-white/7 transition-colors" />
 
-              <div className="flex gap-1 mb-5">
-                {Array.from({ length: t.rating }).map((_, j) => (
-                  <Star key={j} className="w-4 h-4 text-[#F59E0B] fill-[#F59E0B]" />
-                ))}
+              <div className="flex items-center justify-between mb-5">
+                <div className="flex gap-1">
+                  {Array.from({ length: t.rating }).map((_, j) => (
+                    <Star key={j} className="w-4 h-4 text-[#F59E0B] fill-[#F59E0B]" />
+                  ))}
+                </div>
+                {"verified" in t && t.verified && (
+                  <div className="flex items-center gap-1.5 text-xs text-[#10B981]/70 font-mono">
+                    <BadgeCheck className="w-3.5 h-3.5" />
+                    <span>Verified · {(t as { source?: string }).source ?? "Upwork"}</span>
+                  </div>
+                )}
               </div>
 
               <blockquote className="text-base text-white/60 leading-relaxed mb-7">
@@ -64,7 +73,10 @@ export function Testimonials() {
                 </div>
                 <div>
                   <p className="text-base font-semibold text-white/90">{t.name}</p>
-                  <p className="text-sm text-white/40">{t.role} · {t.company}</p>
+                  <p className="text-sm text-white/40">
+                    {t.role} · {t.company}
+                    {"date" in t && t.date ? ` · ${t.date}` : ""}
+                  </p>
                 </div>
               </div>
             </motion.div>

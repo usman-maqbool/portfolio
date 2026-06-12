@@ -133,6 +133,7 @@ export function Projects() {
                       <Layers className="w-3.5 h-3.5" />
                       {isExpanded ? "Hide Details" : "View Architecture"}
                     </button>
+
                   </div>
                 </div>
               </motion.div>

@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Mail, Code2, ExternalLink, Download, ArrowRight, MapPin, Clock } from "lucide-react";
+import { Mail, Code2, ExternalLink, Download, ArrowRight, MapPin, Clock, Briefcase } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { SITE_CONFIG } from "@/lib/data";
 
@@ -35,6 +35,16 @@ const CONTACT_LINKS = [
     color: "text-[#8B5CF6]",
     bg: "bg-[#8B5CF6]/10",
     border: "hover:border-[#8B5CF6]/30",
+  },
+  {
+    icon: Briefcase,
+    label: "Upwork",
+    value: "Usman M. · 98% JSS",
+    href: SITE_CONFIG.upwork,
+    description: "Hire me on Upwork",
+    color: "text-[#14A800]",
+    bg: "bg-[#14A800]/10",
+    border: "hover:border-[#14A800]/30",
   },
 ];
 
@@ -97,7 +107,7 @@ export function Contact() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="grid md:grid-cols-3 gap-5 mb-12"
+          className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 mb-12"
         >
           {CONTACT_LINKS.map((link, i) => (
             <motion.a
