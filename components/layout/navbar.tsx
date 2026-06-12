@@ -51,19 +51,19 @@ export function Navbar() {
         transition={{ duration: 0.5, ease: "easeOut" }}
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
           scrolled
-            ? "bg-[#0B0F19]/90 backdrop-blur-xl border-b border-white/5"
+            ? "bg-[#0D0D0D]/90 backdrop-blur-xl border-b border-white/5"
             : "bg-transparent"
         }`}
       >
         <nav className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
           {/* Logo */}
           <a href="#" className="flex items-center gap-2 group">
-            <div className="w-8 h-8 rounded-lg bg-[#3B82F6]/10 border border-[#3B82F6]/30 flex items-center justify-center group-hover:bg-[#3B82F6]/20 transition-colors">
-              <Terminal className="w-4 h-4 text-[#3B82F6]" />
+            <div className="w-8 h-8 rounded-lg bg-[#10B981]/10 border border-[#10B981]/30 flex items-center justify-center group-hover:bg-[#10B981]/20 transition-colors">
+              <Terminal className="w-4 h-4 text-[#10B981]" />
             </div>
             <span className="font-semibold text-sm text-white/90 tracking-wide">
               {SITE_CONFIG.name.split(" ")[0]}
-              <span className="text-[#3B82F6]">.</span>
+              <span className="text-[#10B981]">.</span>
             </span>
           </a>
 
@@ -105,7 +105,7 @@ export function Navbar() {
             <a href="#contact">
               <Button
                 size="sm"
-                className="bg-[#3B82F6] hover:bg-[#2563EB] text-white text-xs font-medium px-4"
+                className="bg-[#10B981] hover:bg-[#059669] text-white text-xs font-medium px-4"
               >
                 Hire Me
               </Button>
@@ -130,7 +130,7 @@ export function Navbar() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
             transition={{ duration: 0.2 }}
-            className="fixed inset-x-0 top-16 z-40 bg-[#0B0F19]/95 backdrop-blur-xl border-b border-white/5 md:hidden"
+            className="fixed inset-x-0 top-16 z-40 bg-[#0D0D0D]/95 backdrop-blur-xl border-b border-white/5 md:hidden"
           >
             <div className="max-w-6xl mx-auto px-6 py-4 flex flex-col gap-1">
               {NAV_LINKS.map((link) => (
@@ -145,7 +145,7 @@ export function Navbar() {
               ))}
               <div className="pt-3 border-t border-white/5 mt-2">
                 <a href="#contact" onClick={() => setMobileOpen(false)}>
-                  <Button size="sm" className="w-full bg-[#3B82F6] hover:bg-[#2563EB] text-white">
+                  <Button size="sm" className="w-full bg-[#10B981] hover:bg-[#059669] text-white">
                     Hire Me
                   </Button>
                 </a>

@@ -3,13 +3,13 @@ import { SITE_CONFIG } from "@/lib/data";
 
 export function Footer() {
   return (
-    <footer className="border-t border-white/5 bg-[#0B0F19]">
+    <footer className="border-t border-white/5 bg-[#0D0D0D]">
       <div className="max-w-6xl mx-auto px-6 py-12">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           {/* Brand */}
           <div className="flex items-center gap-2">
-            <div className="w-7 h-7 rounded-lg bg-[#3B82F6]/10 border border-[#3B82F6]/30 flex items-center justify-center">
-              <Terminal className="w-3.5 h-3.5 text-[#3B82F6]" />
+            <div className="w-7 h-7 rounded-lg bg-[#10B981]/10 border border-[#10B981]/30 flex items-center justify-center">
+              <Terminal className="w-3.5 h-3.5 text-[#10B981]" />
             </div>
             <div>
               <p className="text-sm font-semibold text-white/90">{SITE_CONFIG.name}</p>

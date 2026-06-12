@@ -8,8 +8,8 @@ const PILLARS = [
     icon: Server,
     label: "Backend Engineering",
     desc: "Django · FastAPI · Node.js · REST APIs",
-    color: "text-[#3B82F6]",
-    bg: "bg-[#3B82F6]/10",
+    color: "text-[#10B981]",
+    bg: "bg-[#10B981]/10",
   },
   {
     icon: Cloud,
@@ -22,8 +22,8 @@ const PILLARS = [
     icon: Database,
     label: "Data Engineering",
     desc: "ELT Pipelines · PostgreSQL · Redis",
-    color: "text-[#10B981]",
-    bg: "bg-[#10B981]/10",
+    color: "text-[#34D399]",
+    bg: "bg-[#34D399]/10",
   },
   {
     icon: GitBranch,
@@ -39,21 +39,21 @@ function ArchitectureDiagram() {
     <div className="relative w-full aspect-square max-w-sm mx-auto">
       <div className="absolute inset-0 dot-pattern rounded-2xl opacity-50" />
 
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-20 h-20 rounded-2xl bg-[#3B82F6]/15 border border-[#3B82F6]/40 flex items-center justify-center z-10">
-        <Server className="w-8 h-8 text-[#3B82F6]" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-20 h-20 rounded-2xl bg-[#10B981]/15 border border-[#10B981]/40 flex items-center justify-center z-10">
+        <Server className="w-8 h-8 text-[#10B981]" />
       </div>
 
       <svg className="absolute inset-0 w-full h-full" viewBox="0 0 300 300">
-        <line x1="150" y1="150" x2="60" y2="60" stroke="rgba(59,130,246,0.2)" strokeWidth="1" strokeDasharray="4 4" />
-        <line x1="150" y1="150" x2="240" y2="60" stroke="rgba(59,130,246,0.2)" strokeWidth="1" strokeDasharray="4 4" />
-        <line x1="150" y1="150" x2="60" y2="240" stroke="rgba(59,130,246,0.2)" strokeWidth="1" strokeDasharray="4 4" />
-        <line x1="150" y1="150" x2="240" y2="240" stroke="rgba(59,130,246,0.2)" strokeWidth="1" strokeDasharray="4 4" />
+        <line x1="150" y1="150" x2="60" y2="60" stroke="rgba(16,185,129,0.2)" strokeWidth="1" strokeDasharray="4 4" />
+        <line x1="150" y1="150" x2="240" y2="60" stroke="rgba(16,185,129,0.2)" strokeWidth="1" strokeDasharray="4 4" />
+        <line x1="150" y1="150" x2="60" y2="240" stroke="rgba(16,185,129,0.2)" strokeWidth="1" strokeDasharray="4 4" />
+        <line x1="150" y1="150" x2="240" y2="240" stroke="rgba(16,185,129,0.2)" strokeWidth="1" strokeDasharray="4 4" />
         <line x1="150" y1="150" x2="150" y2="40" stroke="rgba(16,185,129,0.2)" strokeWidth="1" strokeDasharray="4 4" />
         <line x1="150" y1="150" x2="260" y2="150" stroke="rgba(16,185,129,0.2)" strokeWidth="1" strokeDasharray="4 4" />
       </svg>
 
       {[
-        { top: "5%", left: "15%", label: "API Gateway", color: "border-[#3B82F6]/30 bg-[#3B82F6]/5", textColor: "text-[#3B82F6]" },
+        { top: "5%", left: "15%", label: "API Gateway", color: "border-[#10B981]/30 bg-[#10B981]/5", textColor: "text-[#10B981]" },
         { top: "5%", right: "15%", label: "Auth Service", color: "border-[#8B5CF6]/30 bg-[#8B5CF6]/5", textColor: "text-[#8B5CF6]" },
         { bottom: "5%", left: "15%", label: "PostgreSQL", color: "border-[#10B981]/30 bg-[#10B981]/5", textColor: "text-[#10B981]" },
         { bottom: "5%", right: "15%", label: "Redis Cache", color: "border-[#F59E0B]/30 bg-[#F59E0B]/5", textColor: "text-[#F59E0B]" },
@@ -91,7 +91,7 @@ export function About() {
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6 }}
           >
-            <p className="text-sm font-mono text-[#3B82F6] mb-5 tracking-widest uppercase">
+            <p className="text-sm font-mono text-[#10B981] mb-5 tracking-widest uppercase">
               About Me
             </p>
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-8">
@@ -139,7 +139,7 @@ export function About() {
 
             <a
               href="#contact"
-              className="inline-flex items-center gap-2 mt-10 text-[#3B82F6] text-base font-semibold hover:gap-3 transition-all"
+              className="inline-flex items-center gap-2 mt-10 text-[#10B981] text-base font-semibold hover:gap-3 transition-all"
             >
               Let&apos;s work together
               <ArrowRight className="w-4 h-4" />

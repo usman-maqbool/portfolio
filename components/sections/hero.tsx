@@ -22,10 +22,10 @@ export function Hero() {
         className="absolute inset-0 pointer-events-none"
         style={{
           background:
-            "radial-gradient(ellipse 80% 50% at 50% -10%, rgba(59,130,246,0.12) 0%, transparent 70%)",
+            "radial-gradient(ellipse 80% 50% at 50% -10%, rgba(16,185,129,0.12) 0%, transparent 70%)",
         }}
       />
-      <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-[#0B0F19] to-transparent" />
+      <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-[#0D0D0D] to-transparent" />
 
       {/* Floating dots */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
@@ -39,7 +39,7 @@ export function Hero() {
         ].map((node, i) => (
           <motion.div
             key={i}
-            className={`absolute ${node.size} rounded-full bg-[#3B82F6]/40`}
+            className={`absolute ${node.size} rounded-full bg-[#10B981]/40`}
             style={{
               top: node.top,
               left: "left" in node ? node.left : undefined,
@@ -114,7 +114,7 @@ export function Hero() {
           <a href="#projects">
             <Button
               size="lg"
-              className="bg-[#3B82F6] hover:bg-[#2563EB] text-white font-semibold px-8 h-12 text-base gap-2"
+              className="bg-[#10B981] hover:bg-[#059669] text-white font-semibold px-8 h-12 text-base gap-2"
             >
               View Projects
               <ArrowRight className="w-4 h-4" />

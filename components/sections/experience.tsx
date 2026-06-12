@@ -18,7 +18,7 @@ export function Experience() {
           className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-4"
         >
           <div>
-            <p className="text-sm font-mono text-[#3B82F6] mb-5 tracking-widest uppercase">
+            <p className="text-sm font-mono text-[#10B981] mb-5 tracking-widest uppercase">
               Professional Experience
             </p>
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white">
@@ -32,7 +32,7 @@ export function Experience() {
 
         <div className="relative">
           {/* Vertical line */}
-          <div className="absolute left-8 top-0 bottom-0 w-px bg-gradient-to-b from-[#3B82F6]/40 via-white/5 to-transparent hidden md:block" />
+          <div className="absolute left-8 top-0 bottom-0 w-px bg-gradient-to-b from-[#10B981]/40 via-white/5 to-transparent hidden md:block" />
 
           <div className="space-y-5">
             {EXPERIENCE.map((job, i) => (
@@ -46,7 +46,7 @@ export function Experience() {
               >
                 {/* Timeline dot */}
                 <div className="hidden md:flex absolute left-0 top-7 w-16 items-center justify-end pr-5">
-                  <div className="w-3.5 h-3.5 rounded-full border-2 border-[#3B82F6] bg-[#0B0F19] relative z-10" />
+                  <div className="w-3.5 h-3.5 rounded-full border-2 border-[#10B981] bg-[#0D0D0D] relative z-10" />
                 </div>
 
                 <div className="group p-7 rounded-2xl bg-white/[0.02] border border-white/5 hover:border-white/10 transition-all duration-300">
@@ -60,12 +60,12 @@ export function Experience() {
                           </span>
                         )}
                         {i === 1 && (
-                          <span className="text-xs px-2.5 py-0.5 rounded-full bg-[#3B82F6]/10 text-[#3B82F6] border border-[#3B82F6]/20 font-semibold">
+                          <span className="text-xs px-2.5 py-0.5 rounded-full bg-[#10B981]/10 text-[#10B981] border border-[#10B981]/20 font-semibold">
                             Concurrent
                           </span>
                         )}
                       </div>
-                      <p className="text-lg text-[#3B82F6] font-semibold">{job.company}</p>
+                      <p className="text-lg text-[#10B981] font-semibold">{job.company}</p>
                     </div>
 
                     <div className="flex flex-col items-start md:items-end gap-1.5 shrink-0">
@@ -85,7 +85,7 @@ export function Experience() {
                   <div className="grid md:grid-cols-2 gap-2.5 mb-6">
                     {job.achievements.map((achievement) => (
                       <div key={achievement} className="flex items-start gap-2.5">
-                        <ChevronRight className="w-4 h-4 text-[#3B82F6]/60 mt-0.5 shrink-0" />
+                        <ChevronRight className="w-4 h-4 text-[#10B981]/60 mt-0.5 shrink-0" />
                         <span className="text-sm text-white/50">{achievement}</span>
                       </div>
                     ))}

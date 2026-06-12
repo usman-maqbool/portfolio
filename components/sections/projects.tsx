@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 import { PROJECTS } from "@/lib/data";
 
 const COLOR_MAP = {
-  blue:    { dot: "bg-[#3B82F6]", badge: "bg-[#3B82F6]/10 text-[#3B82F6] border-[#3B82F6]/20", border: "hover:border-[#3B82F6]/30", check: "text-[#3B82F6]", label: "text-[#3B82F6]" },
+  blue:    { dot: "bg-[#10B981]", badge: "bg-[#10B981]/10 text-[#10B981] border-[#10B981]/20", border: "hover:border-[#10B981]/30", check: "text-[#10B981]", label: "text-[#10B981]" },
   purple:  { dot: "bg-[#8B5CF6]", badge: "bg-[#8B5CF6]/10 text-[#8B5CF6] border-[#8B5CF6]/20", border: "hover:border-[#8B5CF6]/30", check: "text-[#8B5CF6]", label: "text-[#8B5CF6]" },
   emerald: { dot: "bg-[#10B981]", badge: "bg-[#10B981]/10 text-[#10B981] border-[#10B981]/20", border: "hover:border-[#10B981]/30", check: "text-[#10B981]", label: "text-[#10B981]" },
   orange:  { dot: "bg-[#F97316]", badge: "bg-[#F97316]/10 text-[#F97316] border-[#F97316]/20", border: "hover:border-[#F97316]/30", check: "text-[#F97316]", label: "text-[#F97316]" },
@@ -32,7 +32,7 @@ export function Projects() {
           className="flex flex-col md:flex-row md:items-end justify-between mb-14 gap-4"
         >
           <div>
-            <p className="text-sm font-mono text-[#3B82F6] mb-5 tracking-widest uppercase">
+            <p className="text-sm font-mono text-[#10B981] mb-5 tracking-widest uppercase">
               Featured Projects
             </p>
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white">

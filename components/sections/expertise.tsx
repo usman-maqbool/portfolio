@@ -8,13 +8,13 @@ const ICON_MAP = { Server, Cloud, Database, Network, Brain };
 
 const COLOR_MAP = {
   blue: {
-    border: "border-[#3B82F6]/20 hover:border-[#3B82F6]/50",
-    iconBg: "bg-[#3B82F6]/10",
-    iconColor: "text-[#3B82F6]",
-    bar: "bg-[#3B82F6]",
-    badge: "bg-[#3B82F6]/10 text-[#3B82F6]/80 border-[#3B82F6]/20",
-    glow: "group-hover:shadow-[0_0_40px_rgba(59,130,246,0.1)]",
-    num: "text-[#3B82F6]/20",
+    border: "border-[#10B981]/20 hover:border-[#10B981]/50",
+    iconBg: "bg-[#10B981]/10",
+    iconColor: "text-[#10B981]",
+    bar: "bg-[#10B981]",
+    badge: "bg-[#10B981]/10 text-[#10B981]/80 border-[#10B981]/20",
+    glow: "group-hover:shadow-[0_0_40px_rgba(16,185,129,0.1)]",
+    num: "text-[#10B981]/20",
   },
   cyan: {
     border: "border-[#06B6D4]/20 hover:border-[#06B6D4]/50",
@@ -68,7 +68,7 @@ export function Expertise() {
           transition={{ duration: 0.5 }}
           className="text-center mb-16"
         >
-          <p className="text-sm font-mono text-[#3B82F6] mb-5 tracking-widest uppercase">
+          <p className="text-sm font-mono text-[#10B981] mb-5 tracking-widest uppercase">
             Technical Expertise
           </p>
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-5">
@@ -146,7 +146,7 @@ export function Expertise() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-80px" }}
             transition={{ duration: 0.5, delay: 0.4 }}
-            className="p-7 rounded-2xl bg-gradient-to-br from-[#3B82F6]/5 to-[#10B981]/5 border border-white/5 flex flex-col items-center justify-center text-center gap-4"
+            className="p-7 rounded-2xl bg-gradient-to-br from-[#10B981]/5 to-[#059669]/5 border border-white/5 flex flex-col items-center justify-center text-center gap-4"
           >
             <div className="text-5xl font-bold gradient-text-multi">30+</div>
             <p className="text-base text-white/50">Technologies in production use</p>

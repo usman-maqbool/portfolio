@@ -5,7 +5,7 @@ import { Star, Quote } from "lucide-react";
 import { TESTIMONIALS } from "@/lib/data";
 
 const AVATAR_COLORS: Record<string, string> = {
-  SC: "bg-[#3B82F6]/20 text-[#3B82F6] border-[#3B82F6]/30",
+  SC: "bg-[#10B981]/20 text-[#10B981] border-[#10B981]/30",
   MW: "bg-[#8B5CF6]/20 text-[#8B5CF6] border-[#8B5CF6]/30",
   PP: "bg-[#10B981]/20 text-[#10B981] border-[#10B981]/30",
   DO: "bg-[#F97316]/20 text-[#F97316] border-[#F97316]/30",

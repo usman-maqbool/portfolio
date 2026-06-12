@@ -12,9 +12,9 @@ const CONTACT_LINKS = [
     value: SITE_CONFIG.email,
     href: `mailto:${SITE_CONFIG.email}`,
     description: "Best for project inquiries",
-    color: "text-[#3B82F6]",
-    bg: "bg-[#3B82F6]/10",
-    border: "hover:border-[#3B82F6]/30",
+    color: "text-[#10B981]",
+    bg: "bg-[#10B981]/10",
+    border: "hover:border-[#10B981]/30",
   },
   {
     icon: ExternalLink,
@@ -42,7 +42,7 @@ export function Contact() {
   return (
     <section id="contact" className="py-32 relative">
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/5 to-transparent" />
-      <div className="absolute inset-0 pointer-events-none" style={{ background: "radial-gradient(ellipse 60% 50% at 50% 100%, rgba(59,130,246,0.07) 0%, transparent 70%)" }} />
+      <div className="absolute inset-0 pointer-events-none" style={{ background: "radial-gradient(ellipse 60% 50% at 50% 100%, rgba(16,185,129,0.07) 0%, transparent 70%)" }} />
 
       <div className="max-w-5xl mx-auto px-6">
         {/* Big CTA headline — Tamal-inspired */}
@@ -53,7 +53,7 @@ export function Contact() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <p className="text-sm font-mono text-[#3B82F6] mb-6 tracking-widest uppercase">
+          <p className="text-sm font-mono text-[#10B981] mb-6 tracking-widest uppercase">
             Get In Touch
           </p>
           <h2 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white leading-tight mb-6">
