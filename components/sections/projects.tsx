@@ -133,14 +133,6 @@ export function Projects() {
                       <Layers className="w-3.5 h-3.5" />
                       {isExpanded ? "Hide Details" : "View Architecture"}
                     </button>
-                    <a
-                      href={`mailto:usman.maqbol.dev@gmail.com?subject=Case Study: ${project.title}`}
-                      onClick={(e) => e.stopPropagation()}
-                      className="flex items-center gap-1.5 text-sm text-white/30 hover:text-white/60 transition-colors"
-                    >
-                      Case Study
-                      <ArrowRight className="w-3.5 h-3.5" />
-                    </a>
                   </div>
                 </div>
               </motion.div>

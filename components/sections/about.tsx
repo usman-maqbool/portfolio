@@ -115,7 +115,7 @@ export function About() {
                 From enterprise IoT infrastructure for US clients, to cross-platform exam monitoring
                 systems, to smart home cloud platforms — I&apos;ve shipped production systems across
                 verticals. Currently leading development at{" "}
-                <span className="text-white font-semibold">Djaneicast</span> while taking on select
+                <span className="text-white font-semibold">Djeneric Solutions</span> while taking on select
                 freelance engagements.
               </p>
             </div>
